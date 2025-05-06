@@ -1,0 +1,257 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Exo 2", sans-serif;
+  }
+  @font-face {
+    font-family: "Exo 2";
+    src: url(static/Exo2-Regular.ttf);
+  }
+  @font-face {
+    font-family: Porche;
+    src: url(Resource/911porschav3.ttf);
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  header {
+    position: relative;
+  }
+  
+  
+  #Myvideo {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    min-width: 25%;
+    max-width: 100%;
+  }
+  
+  nav {
+    position: absolute;
+    top: 0;
+    left: 0%;
+    width: 100%;
+    padding: 30px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(67, 67, 67, 0));
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  nav li {
+    list-style: none;
+    padding: 10px 20px;
+  }
+  
+  nav li button {
+    background-color: rgba(255, 255, 255, 0);
+    color: aliceblue;
+    border: 2px solid rgba(255, 255, 255, 0);
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    transition-duration: 0.4s;
+  }
+  
+  nav li button:hover {
+    background-color: rgba(255, 255, 255, 0.24);
+  }
+  
+  
+  nav li a {
+    display: block;
+    padding: 8px;
+  }
+  
+  
+  nav li a:hover {
+    color: gray;
+  }
+  
+  #logo {
+    font-family: Porche;
+    font-size: 2em;
+    list-style: none;
+    color: aliceblue;
+    text-decoration: none;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  
+  .dropdown .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  footer {
+    background-color: rgb(14, 14, 18);
+    color: aliceblue;
+  
+  }
+  
+  .footercontainer {
+    width: 100%;
+    padding: 70px;
+    padding-bottom: 25px;
+  }
+  
+  .additional p {
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 5px;
+  }
+  
+  hr {
+    border: 0.5px solid rgba(255, 255, 255, 0.24);
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+  }
+  
+  #logoend {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: porche;
+    font-size: 1.5em;
+    padding: 75px;
+    color: #f1f1f1;
+    text-decoration: none;
+  }
+  
+  
+  #End {
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 50px;
+  }
+  
+  .additional {
+    display: flex;
+    margin-top: 25px;
+    gap: 100px;
+  }
+  
+  .additional div {
+    width: 250px;
+  }
+  
+  
+  .additional #pl {
+    margin-top: 10px;
+    margin-bottom: 25px;
+  }
+  
+  .additional button {
+    border-radius: 5px;
+    border: none;
+    width: 250px;
+    height: 50px;
+  }
+  
+  .additional #Socialmedia button {
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 5px;
+    gap: 5px;
+  }
+  
+  .additional button:hover {
+    background-color: rgba(255, 255, 255, 0.226);
+  }
+  
+  .support {
+    display: flex;
+  }
+  
+  .support a {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+  }
+  
+  .support a:hover {
+    background-color: rgba(255, 255, 255, 0.226);
+    border: none;
+    border-radius: 3px;
+    width: 100%;
+  }
+  
+  .support-text {
+    list-style: none;
+    margin-top: 15px;
+  }
+  
+  .support-text li {
+    margin-right: 200px;
+    margin-top: 10px;
+  }
+  
+  #Region {
+    margin-bottom: 50px;
+  }
+  
+  #Region h2 {
+    margin-bottom: 30px;
+  }
+  
+  @keyframes appear {
+    from {
+      opacity: 0.5;
+      scale: 0.5;
+    }
+    to {
+      opacity: 1;
+      scale: 1;
+    }
+  }
+
+  section {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0;
+    animation-delay: 0.5;
+  }
+  
+  a {
+    color: #0d0d0d;
+    text-decoration: none;
+  }
+
+.Box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+    padding: 100px;
+}
+

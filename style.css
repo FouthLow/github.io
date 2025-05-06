@@ -1,0 +1,505 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Exo 2", sans-serif;
+}
+@font-face {
+  font-family: "Exo 2";
+  src: url(static/Exo2-Regular.ttf);
+}
+@font-face {
+  font-family: Porche;
+  src: url(Resource/911porschav3.ttf);
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  position: relative;
+}
+
+
+#Myvideo {
+  position: relative;
+  right: 0;
+  bottom: 0;
+  min-width: 25%;
+  max-width: 100%;
+}
+
+nav {
+  position: absolute;
+  top: 0;
+  left: 0%;
+  width: 100%;
+  padding: 30px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(67, 67, 67, 0));
+  overflow: hidden;
+  width: 100%;
+}
+
+nav li {
+  list-style: none;
+  padding: 10px 20px;
+}
+
+nav li button {
+  background-color: rgba(255, 255, 255, 0);
+  color: aliceblue;
+  border: 2px solid rgba(255, 255, 255, 0);
+  border-radius: 5px;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  transition-duration: 0.4s;
+}
+
+nav li button:hover {
+  background-color: rgba(255, 255, 255, 0.24);
+}
+
+
+nav li a {
+  display: block;
+  padding: 8px;
+}
+
+
+nav li a:hover {
+  color: gray;
+}
+
+#logo {
+  font-family: Porche;
+  font-size: 2em;
+  list-style: none;
+  color: aliceblue;
+  text-decoration: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+
+.dropdown .dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#Discover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 60px;
+  font-size: 45px;
+}
+
+
+.cards-section {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+  margin-top: 60px;
+}
+
+.card {
+  position: relative;
+  width: 280px;
+  height: 240px;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+}
+
+.card-text {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  color: white;
+}
+
+.card-text h3 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.arrow {
+  font-size: 1.5rem;
+  display: inline-block;
+  margin-top: 8px;
+}
+
+
+.Model {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+  margin-top: 60px;
+}
+
+.Model-card {
+  position: relative;
+  width: 400px;
+  height: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.Model-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+}
+
+.Model .Model-card img:hover {
+  scale: 1.1;
+  transition-duration: 0.5s;
+}
+
+.Model-card img:hover::after {
+  scale: -1;
+  transition-duration: 1s;
+}
+
+.Model-text {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  color: white;
+}
+
+.Model-button button{
+  background-color: white;
+  border: 2px solid white;
+  border-radius: 3px;
+  margin-top: 10px;
+  width: 135%;
+  height: 60px;
+  display: block;
+  align-items: center;
+}
+
+#ModelButton {
+  background-color: rgba(0,0,0,0.2);
+  color: #f9f9f9;
+}
+
+#ModelButton:hover {
+  background-color: rgba(255, 255, 255, 0.226);
+  transition-duration: 0.5s;
+}
+
+#id {
+  position: absolute;
+  bottom: 100px;
+  left: 16px;
+}
+
+#Location p {
+  padding: 0px;
+  margin-bottom: 5px;
+  margin-left: 0px;
+}
+
+#Location p a {
+  text-decoration: none;
+}
+
+
+
+#Textboxt {
+  width: 200px;
+  height: 50px;
+}
+
+.material-symbols-outlined person {
+  position: absolute;
+  
+}
+
+
+footer {
+  background-color: rgb(14, 14, 18);
+  color: aliceblue;
+
+}
+
+.footercontainer {
+  width: 100%;
+  padding: 70px;
+  padding-bottom: 25px;
+}
+
+.additional p {
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 5px;
+}
+
+hr {
+  border: 0.5px solid rgba(255, 255, 255, 0.24);
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 5%;
+}
+
+#logoend {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: porche;
+  font-size: 1.5em;
+  padding: 100px;
+  color: #f1f1f1;
+  text-decoration: none;
+}
+
+
+#End {
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-top: 50px;
+}
+
+.additional {
+  display: flex;
+  margin-top: 25px;
+  gap: 100px;
+}
+
+.additional div {
+  width: 250px;
+}
+
+
+.additional #pl {
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+.additional button {
+  border-radius: 5px;
+  border: none;
+  width: 250px;
+  height: 50px;
+}
+
+.additional #Socialmedia button {
+  border-radius: 5px;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 5px;
+  gap: 5px;
+}
+
+.additional button:hover {
+  background-color: rgba(255, 255, 255, 0.226);
+}
+
+.support {
+  display: flex;
+}
+
+.support a {
+  text-decoration: none;
+  list-style: none;
+  color: white;
+}
+
+.support a:hover {
+  background-color: rgba(255, 255, 255, 0.226);
+  border: none;
+  border-radius: 3px;
+  width: 100%;
+}
+
+.support-text {
+  list-style: none;
+  margin-top: 15px;
+}
+
+.support-text li {
+  margin-right: 200px;
+  margin-top: 10px;
+}
+
+#Region {
+  margin-bottom: 50px;
+}
+
+#Region h2 {
+  margin-bottom: 30px;
+}
+
+#Info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 250px;
+  padding-right: 250px;
+  margin-top: 25px;
+}
+
+.container {
+  display: flex;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #0d0d0d;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.text-box {
+  flex: 1;
+  color: white;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text-box h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.text-box p {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.text-box button {
+  padding: 12px 24px;
+  font-size: 16px;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.image-box {
+  flex: 1;
+}
+
+.image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.fp_container {
+  display: flex;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-radius: 10px;
+  overflow: hidden ;
+  justify-content: space-between;
+  padding-top: 200px;
+  padding-bottom: 100px;
+}
+
+.fp_text {
+  flex: 1;
+  color: rgb(0, 0, 0);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.fp_text h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.fp_image {
+  flex: 1;
+  margin-top: 3em;
+
+}
+
+.fp_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#searchbar {
+  height: 50px;
+  width: 75%;
+  border: 2px solid black;
+  padding: 5px;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0.5;
+    scale: 0.5;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+section {
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0;
+  animation-delay: 0.5;
+}
+
+a {
+  color: #0d0d0d;
+  text-decoration: none;
+}
+
+#ModelButton a {
+  color: #f1f1f1;
+
+}
